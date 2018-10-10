@@ -1,0 +1,49 @@
+.principal{
+  width: 100%;
+  height: 100%;
+  background: white;
+  .arriba{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    .nuevo{
+      height: 40px;
+    }
+    // Stylo de los buscador
+    .buscador {
+        width: 40%;
+        height: 35px;
+        background: white;
+        font-size: 15px;
+        padding: 10px;
+        color: rgb(66, 66, 66);
+        // border-radius: 3px;
+        border: none;
+        transition: 0.5s ease;
+        border-bottom: 2px solid #88adce;
+    }
+
+    .buscador:focus {
+        outline: none;
+        width: 60%;
+        border-bottom: 2px solid #0275d8;
+    }
+
+    .buscador:active {
+        outline: none;
+        border-bottom: 2px solid #0780eb;
+    }
+  }
+  .abajo{
+    width: 100%;
+    height: calc(100% - 70px)!important;
+  }
+}
+
+button{
+  margin-right: 20px;
+}
